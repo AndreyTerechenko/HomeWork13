@@ -34,4 +34,4 @@ public class Author {
         return Objects.hash(name, lastName);
     }
 }
-
+// Исправил
