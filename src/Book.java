@@ -31,6 +31,7 @@ public class Book {
         return getBookTitle() + author.toString() + " " + getYear() + " года";
     }
 
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -38,6 +39,7 @@ public class Book {
         return year == book.year && Objects.equals(bookTitle, book.bookTitle) && Objects.equals(author, book.author);
     }
 
+    @Override
     public int hashCode() {
         return Objects.hash(year, bookTitle, author);
     }
